@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+
+const click = () =>{
+    alert("Hi")
+}
+</script>
+
+
+<div class="flex w-full h-screen justify-center">
+    <button on:click={click} >Click API</button>
+</div>
