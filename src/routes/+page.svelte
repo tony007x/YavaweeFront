@@ -1,7 +1,9 @@
 <script lang="ts">
+import Wretch from "wretch"
 
-const click = () =>{
-    alert("Hi")
+const click = async () =>{
+    await Wretch('/api/user/hello')
+    .post()
 }
 </script>
 
